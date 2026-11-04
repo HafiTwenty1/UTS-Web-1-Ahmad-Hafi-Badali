@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIAKAD Mini — Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">SIAKAD Mini</div>
+    <nav class="nav-kanan">
+      <button class="notif" aria-label="Notifikasi, 3 belum dibaca">
+        🔔<span class="badge">3</span>
+      </button>
+      <!-- Tugas 1: profil pengguna -->
+      <div class="profil">
+        <span class="avatar" aria-hidden="true">AP</span>
+        <span class="nama">Admin Prodi</span>
+      </div>
+      <a href="#" class="logout">Logout</a>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+      <nav class="menu" aria-label="Menu utama">
+        <a href="#" class="aktif">Dashboard</a>
+        <a href="#">Data Mahasiswa</a>
+        <a href="#">Mata Kuliah</a>
+        <a href="#">Nilai</a>
+        <a href="#">Laporan</a>
+      </nav>
+      <!-- Tugas 2: Pengaturan di dasar sidebar -->
+      <a href="#" class="pengaturan">Pengaturan</a>
+    </aside>
+
+    <main class="konten">
+      <h1>Dashboard</h1>
+
+      <section class="statistik">
+        <article class="kartu"><h2>Mahasiswa Aktif</h2><p class="angka">1.248</p></article>
+        <article class="kartu"><h2>Dosen</h2><p class="angka">62</p></article>
+        <article class="kartu"><h2>Mata Kuliah</h2><p class="angka">94</p></article>
+        <article class="kartu">
+          <!-- Tugas 3: label "Baru" -->
+          <span class="label-baru">Baru</span>
+          <h2>Kelas Hari Ini</h2><p class="angka">18</p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Pengumuman</h2>
+        <p>Pengisian KRS semester genap dibuka mulai Senin. Pastikan data akademik sudah diverifikasi dosen PA.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    &copy; 2026 Program Studi Teknik Informatika — FTI UNISKA
+  </footer>
+</body>
+</html>

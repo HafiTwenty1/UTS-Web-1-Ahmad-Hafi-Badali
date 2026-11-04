@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P3 — Positioning</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, sans-serif; }
+
+    .header {
+      position: sticky;            /* eksperimen 1: ganti ke fixed */
+      top: 0; z-index: 100;
+      height: 64px;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1e3a5f;
+      color: #fff;
+    }
+    .notif {
+      position: relative;          /* eksperimen 2: hapus baris ini */
+      font-size: 1.5rem;
+      background: none;
+      border: 0;
+    }
+    .badge {
+      position: absolute;
+      top: -4px;
+      right: -8px;
+      padding: 1px 6px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #fff;
+      background: #dc3545;
+      border-radius: 999px;
+    }
+
+    .isi { padding: 24px; }
+    .isi p { max-width: 70ch; line-height: 1.7; }
+
+    .tumpuk { position: relative; height: 180px; margin-top: 24px; }
+    .lapis {
+      position: absolute;
+      width: 160px;
+      height: 120px;
+      padding: 12px;
+      color: #fff;
+      font-weight: 600;
+    }
+    .lapis-1 { left: 0;     top: 0;    background: #1e3a5f; }
+    .lapis-2 { left: 80px;  top: 30px; background: #b45309; }
+    .lapis-3 { left: 160px; top: 60px; background: #2f6f4f; }
+
+    .chat {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: #b45309;
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <strong>SIAKAD Mini</strong>
+    <button class="notif" aria-label="Notifikasi, 3 belum dibaca">
+      🔔<span class="badge">3</span>
+    </button>
+  </header>
+
+  <main class="isi">
+    <h1>Percobaan 3 — Positioning</h1>
+    <p>Paragraf pertama halaman. Perhatikan apakah teks ini tertutup header.</p>
+
+    <div class="tumpuk">
+      <div class="lapis lapis-1">Lapis 1</div>
+      <div class="lapis lapis-2">Lapis 2</div>
+      <div class="lapis lapis-3">Lapis 3</div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengumuman akademik untuk mahasiswa Teknik Informatika.</p>
+  </main>
+
+  <a href="#" class="chat">Bantuan</a>
+</body>
+</html>
