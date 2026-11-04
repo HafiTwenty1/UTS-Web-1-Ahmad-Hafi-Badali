@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P2 — Flexbox Lab</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; margin: 24px; }
+
+    .lab {
+      width: 1000px;
+      height: 240px;                 /* tinggi tetap agar align-items terlihat */
+      outline: 3px dashed #1f5c99;   /* outline tidak memakan ruang */
+      background: #e8eef5;
+      /* EKSPERIMEN DIMULAI DI SINI (lakukan via DevTools) */
+    }
+    .item {
+      padding: 16px;
+      color: #fff;
+      font-weight: 600;
+    }
+    .a { background: #1e3a5f; }
+    .b { background: #b45309; }
+    .c { background: #2f6f4f; }
+  </style>
+</head>
+<body>
+  <h1>Percobaan 2 — Flexbox Lab</h1>
+  <div class="lab">
+    <div class="item a">A</div>
+    <div class="item b">B dengan teks lebih panjang</div>
+    <div class="item c">C</div>
+  </div>
+</body>
+</html>
