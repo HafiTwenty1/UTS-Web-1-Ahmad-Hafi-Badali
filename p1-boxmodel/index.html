@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P1 — Box Model</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 24px; }
+
+    /* --- A. box-sizing --- */
+    .kotak {
+      width: 300px;
+      padding: 20px;
+      border: 5px solid #1e3a5f;
+      background: #dce6f2;
+      margin-bottom: 16px;
+    }
+    .kotak-a { box-sizing: content-box; }
+    .kotak-b { box-sizing: border-box; }
+
+    /* --- B. margin collapsing --- */
+    .judul { margin-bottom: 30px; background: #ffe7cf; }
+    .paragraf { margin-top: 20px; background: #ffe7cf; }
+
+    /* --- C. inline vs inline-block --- */
+    .menu a {
+      padding: 12px 16px;
+      background: #1e3a5f;
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Percobaan 1 — Box Model</h1>
+
+  <div class="kotak kotak-a">Kotak A (content-box)</div>
+  <div class="kotak kotak-b">Kotak B (border-box)</div>
+
+  <section class="uji-collapse">
+    <h2 class="judul">Judul bagian</h2>
+    <p class="paragraf">Paragraf setelah judul.</p>
+  </section>
+
+  <p>Baris teks di atas menu.</p>
+  <nav class="menu">
+    <a href="#">Beranda</a>
+    <a href="#">Data Mahasiswa</a>
+  </nav>
+  <p>Baris teks di bawah menu.</p>
+</body>
+</html>
